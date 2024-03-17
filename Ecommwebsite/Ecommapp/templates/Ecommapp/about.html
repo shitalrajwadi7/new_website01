@@ -1,0 +1,46 @@
+{% extends 'Ecommapp/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'Ecommapp/images/banner/b5.jpg' %}" class="d-block w-100" alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'Ecommapp/images/banner/b6.jpg' %}" class="d-block w-100" alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'Ecommapp/images/banner/b7.jpg' %}" class="d-block w-100" alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'Ecommapp/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner image">
+    </div>
+  </div>
+</div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+  <br>
+  <h2 class="text-center">About Us</h2>
+  <br>
+  <div class="row container">
+    <p class="fs-4 text-center">
+      This is a public limited company having its registerd and corporate office at Pune city of Maharahstra State in India .The company was incorporated in the year 2018 and production commence in 2020.
+      THis si the one of the gratest growing Public Listed Companies in Pune.
+    </p>
+  </div>
+  <br><br>
+  <h2 class="text-center">Mission</h2>
+  <br>
+  <div class="row container">
+    <p class="fs-4 text-center">To embrace the right technology to delight our customers 
+    Empowering the former community throught our unique 'Relationship Farming' Model
+    To anticipate, understand and respond to our customers' needs by creating high-quality products and making then available through innovative and convenient channels  
+    </p>
+  </div>
+</div>
+<br><br>
+{% endblock main-content %}
